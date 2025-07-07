@@ -1,0 +1,38 @@
+{
+  "name": "aichatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd Frontend && npm run dev",
+    "server": "cd backend && npm run dev",
+    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm run client\" \"npm run server\"",
+    "build": "cd Frontend && npm run build",
+    "deploy": "node deploy.js",
+    "deploy:backend": "node deploy.js 1",
+    "deploy:frontend": "node deploy.js 2",
+    "deploy:both": "node deploy.js 3",
+    "deploy:mono": "node deploy.js 4",
+    "setup-env": "node setup-vercel-env.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "dependencies": {
+    "@react-oauth/google": "^0.12.2",
+    "@reduxjs/toolkit": "^2.8.2",
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "express-session": "^1.18.1",
+    "firebase": "^11.10.0",
+    "googleapis": "^150.0.1",
+    "react-hot-toast": "^2.5.2",
+    "react-icons": "^5.5.0",
+    "react-redux": "^9.2.0",
+    "react-toastify": "^11.0.5"
+  }
+}

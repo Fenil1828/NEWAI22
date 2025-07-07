@@ -1,0 +1,56 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&display=swap');
+
+
+@import "tailwindcss";
+
+
+*{
+
+  box-sizing: border-box;
+
+}
+
+#root{
+
+  animation: fadeIn 1.5s;
+}
+
+/* body{
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+} */
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.krupixi-title {
+  font-family: 'Michroma', 'Inter', sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hide {
+    scrollbar-width: none;
+}
+
+/* Ensure the container remains scrollable */
+.scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+}
